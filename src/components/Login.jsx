@@ -27,13 +27,13 @@ function Login({ setUser }) {
 
   return (
     <>
-      {/* Katrore dekorativë në sfond */}
+      
       <div className="decor-square square-large top-left"></div>
       <div className="decor-square square-small top-right"></div>
       <div className="decor-square square-small bottom-left"></div>
       <div className="decor-square square-large bottom-right"></div>
 
-      {/* Karta e login-it */}
+      
       <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Card style={{ width: 300, zIndex: 1 }}>
           <Title level={3} style={{ textAlign: 'center' }}>Giriş Yap</Title>

@@ -18,12 +18,12 @@ function AddProduct() {
         id: Date.now(),
       };
 
-      // Ruaj në localStorage
+      
       const existingProducts = JSON.parse(localStorage.getItem('products')) || [];
       existingProducts.push(newProduct);
       localStorage.setItem('products', JSON.stringify(existingProducts));
 
-      // Dërgo në Google Sheets
+      
       await fetch('https://script.google.com/macros/s/AKfycbzEc62JDAju-r1ah_yCRONJEHBQUJKD-chWG5dBjeI7BSvHARkr7x6L5vQ5bm0V2kISEw/exec', {
         method: 'POST',
         body: JSON.stringify(newProduct),
